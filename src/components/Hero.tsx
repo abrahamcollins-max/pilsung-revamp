@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import SplitType from "split-type";
 import { Star, CheckCircle } from "lucide-react";
@@ -208,7 +208,7 @@ export function Hero({ isReady }: { isReady: boolean }) {
       {/* Main Background */}
       <div 
         ref={bgRef}
-        className="absolute inset-0 z-0 bg-cover bg-center"
+        className="absolute inset-0 z-0 bg-cover bg-center opacity-0"
         style={{ backgroundImage: `url(${mainImage})` }}
       />
       <div className="absolute inset-0 z-0 bg-gradient-to-r from-black/90 via-black/60 to-black/30 pointer-events-none" />
@@ -364,19 +364,23 @@ export function Hero({ isReady }: { isReady: boolean }) {
         }
       `}</style>
       <div className="absolute bottom-0 left-0 w-full bg-[#ED1C24] text-white py-3 overflow-hidden z-30 flex uppercase font-display text-lg tracking-widest font-bold shadow-[0_-10px_30px_rgba(237,28,36,0.3)]">
-        <div className="flex whitespace-nowrap animate-marquee">
-          <span className="mx-8">All Introductory Programs are just $29!</span>
-          <span className="mx-8 opacity-50">•</span>
-          <span className="mx-8">1-on-1 Family Meeting included!</span>
-          <span className="mx-8 opacity-50">•</span>
-          <span className="mx-8">2 Weeks of incredible classes!</span>
-          <span className="mx-8 opacity-50">•</span>
-          <span className="mx-8">All Introductory Programs are just $29!</span>
-          <span className="mx-8 opacity-50">•</span>
-          <span className="mx-8">1-on-1 Family Meeting included!</span>
-          <span className="mx-8 opacity-50">•</span>
-          <span className="mx-8">2 Weeks of incredible classes!</span>
-          <span className="mx-8 opacity-50">•</span>
+        <div className="flex w-max animate-marquee">
+          <div className="flex items-center shrink-0">
+            <span className="mx-8">All Introductory Programs are just $29!</span>
+            <span className="mx-8 opacity-50">•</span>
+            <span className="mx-8">1-on-1 Family Meeting included!</span>
+            <span className="mx-8 opacity-50">•</span>
+            <span className="mx-8">2 Weeks of incredible classes!</span>
+            <span className="mx-8 opacity-50">•</span>
+          </div>
+          <div className="flex items-center shrink-0" aria-hidden="true">
+            <span className="mx-8">All Introductory Programs are just $29!</span>
+            <span className="mx-8 opacity-50">•</span>
+            <span className="mx-8">1-on-1 Family Meeting included!</span>
+            <span className="mx-8 opacity-50">•</span>
+            <span className="mx-8">2 Weeks of incredible classes!</span>
+            <span className="mx-8 opacity-50">•</span>
+          </div>
         </div>
       </div>
     </section>

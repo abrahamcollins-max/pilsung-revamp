@@ -47,7 +47,7 @@ export function Instructors() {
         start: "top 40%",
         end: "bottom 30%",
         onEnter: () => gsap.to("body", { backgroundColor: "#ffffff", color: "#111111", duration: 0.8, overwrite: "auto" }),
-        onLeaveBack: () => gsap.to("body", { backgroundColor: "#111111", color: "#ffffff", duration: 0.8, overwrite: "auto" }),
+        onLeaveBack: () => gsap.to("body", { backgroundColor: "#000000", color: "#ffffff", duration: 0.8, overwrite: "auto" }),
       });
     });
     return () => ctx.revert();
