@@ -1,0 +1,6 @@
+{
+  "name": "Pilsung ATA Martial Arts",
+  "description": "Modern website for Pilsung ATA Martial Arts featuring smooth scrolling and GSAP animations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
