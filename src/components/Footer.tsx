@@ -95,22 +95,38 @@ export function Footer() {
             </a>
             
             <div className="flex items-center gap-4 pt-4">
-              <a href="#" className="w-10 h-10 rounded-full bg-[#1877F2] flex items-center justify-center hover:scale-110 transition-transform shadow-lg">
-                <svg viewBox="0 0 24 24" className="w-5 h-5 fill-white" xmlns="http://www.w3.org/2000/svg"><path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.114.198v3.425c-.283-.05-.759-.082-1.362-.082-2.735 0-3.159 1.16-3.159 3.143v1.83h4.646l-.844 3.667h-3.802v8.94H9.101z"/></svg>
+              <a 
+                href="https://facebook.com" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="w-10 h-10 rounded-full bg-[#1877F2] flex items-center justify-center hover:scale-110 transition-transform shadow-lg"
+                id="footer-facebook-link"
+              >
+                <svg viewBox="0 0 24 24" className="w-5 h-5 fill-white" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                </svg>
               </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-[#FF1A1A] flex items-center justify-center hover:scale-110 transition-transform shadow-lg">
-                <svg viewBox="0 0 24 24" className="w-5 h-5 fill-white" xmlns="http://www.w3.org/2000/svg"><path d="M12.015 11.23c-.276.776.11 1.652.855 1.968l5.894 2.513c.749.32 1.58-.05 1.854-.825l1.107-3.136c.277-.78-.11-1.654-.855-1.967l-5.893-2.514c-.749-.32-1.581.05-1.855.826l-1.107 3.135zm-2.022 4.12l-2.316 3.04c-.466.61-.347 1.533.296 2.035l2.585 2.026c.636.502 1.558.417 2.03-.178l2.316-3.04c.465-.61.346-1.532-.296-2.034l-2.586-2.025c-.636-.503-1.558-.418-2.03.177zm-1.83 5.34l3.15-1.106c.036-.013.064-.035.093-.053l4.636-2.7c.677-.393.948-1.25.626-1.954l-1.39-3.023c-.31-.676-.983-.872-1.666-.453l-4.577 2.808c-.702.43-.883 1.25-.436 1.944l1.565 2.536zm-3.036-.9l3.04 2.317c.61.465 1.533.346 2.034-.297l2.026-2.585c.502-.636.417-1.558-.178-2.03l-3.04-2.316c-.61-.466-1.533-.347-2.035.295l-2.025 2.586c-.503.636-.418 1.558.177 2.03zm-1.83-5.34L.91 8.56c-.82-1.921-.194-4.094 1.488-5.17l5.228-1.83L5.807 5.64c-.287.643-.075 1.398.544 1.716.208.106.425.155.638.155.454 0 .89-.25 1.09-.697l2.645-5.918c.314-.707.037-1.516-.62-1.85-2.02-1.04-4.22-.38-5.4.92-1.6 1.83-1.32 4.49-.66 6.012l3.228 7.21c.277.625.992.83 1.597.466l6.814-4.108z"/></svg>
+              <a 
+                href="https://yelp.com" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="w-10 h-10 rounded-full bg-[#D32323] flex items-center justify-center hover:scale-110 transition-transform shadow-lg"
+                id="footer-yelp-link"
+              >
+                <svg viewBox="0 0 24 24" className="w-5 h-5 fill-white" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12.215 15.35c-.16-.36-.45-.63-.8-.74l-4.14-1.21a.995.995 0 0 1-.72-1.25l.48-1.57a1 1 0 0 1 1.25-.72l4.14 1.21a1 1 0 0 1 .74.8l.21 4.14a.995.995 0 0 1-.92 1.05c-.11 0-.22-.02-.24-.029zm2.42-2.12c-.11-.38.01-.79.31-1.04l2.95-2.28a.993.993 0 0 1 1.4.15l1.01 1.3c.31.41.24 1-.16 1.31l-2.95 2.29c-.39.3-.92.21-1.18-.16l-1.31-1.41s-.07-.2-.07-.21zm-4.3 2.1c-.08-.38-.34-.7-.7-.84l-3.23-1.82a1 1 0 0 1-.41-1.4l1.01-1.3a.993.993 0 0 1 1.4-.41l3.23 1.82c.41.24.6.76.44 1.21l-1.32 2.36c-.05.14-.14.24-.22.28a1.002 1.002 0 0 1-.22.1zm2.39 3.03v3.7c0 .55-.45 1-1 1h-1.61a.993.993 0 0 1-.99-1v-3.7c0-.55.45-.99 1-.99h1.61c.54 0 .99.44.99.99zm2.14-10.7c.18-.35.16-.76-.05-1.08l-2.16-3.04c-.32-.46-.95-.57-1.41-.25l-1.3 1c-.42.32-.51.93-.19 1.35l2.16 3.04c.3.43.83.56 1.29.32l1.96-1.12z" />
+                </svg>
               </a>
             </div>
 
             <div className="pt-6 border-t border-neutral-200 flex items-center justify-center sm:justify-start">
-              <div className="flex items-center gap-4 group">
+              <div className="flex items-center gap-6 group">
                 <img 
                   src="https://res.cloudinary.com/dxyaxgbjl/image/upload/v1781294261/Aspire-2025-2026-300x300_j62inc.webp" 
                   alt="Aspire Member Investor" 
-                  className="h-32 w-32 object-contain group-hover:scale-110 transition-transform duration-300"
+                  className="h-44 w-44 md:h-48 md:w-48 object-contain group-hover:scale-105 transition-transform duration-300"
                 />
-                <div className="text-neutral-500 font-medium text-sm tracking-widest uppercase">
+                <div className="text-neutral-500 font-medium text-sm md:text-base tracking-widest uppercase leading-relaxed">
                   Aspire<br/>Member<br/>Investor
                 </div>
               </div>

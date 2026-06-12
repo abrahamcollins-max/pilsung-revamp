@@ -8,6 +8,7 @@ import { Programs } from "./components/Programs";
 import { BirthdayParties } from "./components/BirthdayParties";
 import { Instructors } from "./components/Instructors";
 import { FAQs } from "./components/FAQs";
+import { Reviews } from "./components/Reviews";
 import { Footer } from "./components/Footer";
 
 export default function App() {
@@ -28,6 +29,7 @@ export default function App() {
         <BirthdayParties />
         <Instructors />
         <FAQs />
+        <Reviews />
         <Footer />
       </main>
     </Layout>
