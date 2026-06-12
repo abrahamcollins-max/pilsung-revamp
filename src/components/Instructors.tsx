@@ -72,7 +72,7 @@ export function Instructors() {
                 <img 
                   src={instructors[0].image} 
                   alt={instructors[0].name}
-                  className="absolute inset-0 w-full h-full object-cover object-top opacity-90 group-hover:opacity-100 filter grayscale group-hover:grayscale-0 transition-all duration-700 ease-out group-hover:scale-105"
+                  className="absolute inset-0 w-full h-full object-cover object-top opacity-90 group-hover:opacity-100 transition-all duration-700 ease-out group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-80 group-hover:opacity-50 transition-opacity duration-700" />
               </div>
@@ -99,7 +99,7 @@ export function Instructors() {
                   <img 
                     src={instructor.image} 
                     alt={instructor.name}
-                    className="absolute inset-0 w-full h-full object-cover object-top opacity-90 group-hover:opacity-100 filter grayscale group-hover:grayscale-0 transition-all duration-700 ease-out group-hover:scale-105"
+                    className="absolute inset-0 w-full h-full object-cover object-top opacity-90 group-hover:opacity-100 transition-all duration-700 ease-out group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-80 group-hover:opacity-50 transition-opacity duration-700" />
                 </div>

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Facebook, Phone, MapPin } from "lucide-react";
+import { Phone, MapPin } from "lucide-react";
 
 export function Footer() {
   const [copiedField, setCopiedField] = useState<string | null>(null);
@@ -96,10 +96,10 @@ export function Footer() {
             
             <div className="flex items-center gap-4 pt-4">
               <a href="#" className="w-10 h-10 rounded-full bg-[#1877F2] flex items-center justify-center hover:scale-110 transition-transform shadow-lg">
-                <Facebook size={20} className="fill-current text-white border-0" />
+                <svg viewBox="0 0 24 24" className="w-5 h-5 fill-white" xmlns="http://www.w3.org/2000/svg"><path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.114.198v3.425c-.283-.05-.759-.082-1.362-.082-2.735 0-3.159 1.16-3.159 3.143v1.83h4.646l-.844 3.667h-3.802v8.94H9.101z"/></svg>
               </a>
               <a href="#" className="w-10 h-10 rounded-full bg-[#FF1A1A] flex items-center justify-center hover:scale-110 transition-transform shadow-lg">
-                <svg viewBox="0 0 24 24" className="w-5 h-5 fill-white"><path d="M11.666 12.01L8.718 10.99 11.232 5.094c.319-.748-.052-1.579-.824-1.854-.775-.275-1.65.111-1.967.854s-.044 6.776-.044 6.776c0 .484-.337.89-.806.945-1.127.135-2.28-.415-2.73-1.464-.492-1.156-.347-2.316.326-3.15C3.805 5.56 1.776 6.54.912 8.56c-.82 1.921-.194 4.094 1.488 5.17l5.228 1.83 -1.82 4.08c-.287.643-.075 1.398.544 1.716.208.106.425.155.638.155.454 0 .89-.25 1.09-.697l2.645-5.918c.314-.707.037-1.516-.62-1.85z"/><path d="M12.984 13.906L17.518 17.514c.594.472 1.484.34 1.986-.296.502-.636.417-1.558-.178-2.03L15.352 12.03c-.66-.466-1.528-.485-2.203-.02l-.515.36c-.45.318-.517.914-.15.132zM15.46 11.696L19.98 9.3c.69-.364 1.583-.178 1.996.42.413.595.143 1.378-.518.174l-4.522 2.396c-.736.392-1.594.238-2.18-.328l-.508-.49c-.437-.425-.333-1.026.22-1.42z"/><path d="M12.185 10.32v-5c0-.777.627-1.405 1.4-1.405s1.4.628 1.4 1.405v5c0 .777-.627 1.404-1.4 1.404s-1.4-.627-1.4-1.404z"/></svg>
+                <svg viewBox="0 0 24 24" className="w-5 h-5 fill-white" xmlns="http://www.w3.org/2000/svg"><path d="M12.015 11.23c-.276.776.11 1.652.855 1.968l5.894 2.513c.749.32 1.58-.05 1.854-.825l1.107-3.136c.277-.78-.11-1.654-.855-1.967l-5.893-2.514c-.749-.32-1.581.05-1.855.826l-1.107 3.135zm-2.022 4.12l-2.316 3.04c-.466.61-.347 1.533.296 2.035l2.585 2.026c.636.502 1.558.417 2.03-.178l2.316-3.04c.465-.61.346-1.532-.296-2.034l-2.586-2.025c-.636-.503-1.558-.418-2.03.177zm-1.83 5.34l3.15-1.106c.036-.013.064-.035.093-.053l4.636-2.7c.677-.393.948-1.25.626-1.954l-1.39-3.023c-.31-.676-.983-.872-1.666-.453l-4.577 2.808c-.702.43-.883 1.25-.436 1.944l1.565 2.536zm-3.036-.9l3.04 2.317c.61.465 1.533.346 2.034-.297l2.026-2.585c.502-.636.417-1.558-.178-2.03l-3.04-2.316c-.61-.466-1.533-.347-2.035.295l-2.025 2.586c-.503.636-.418 1.558.177 2.03zm-1.83-5.34L.91 8.56c-.82-1.921-.194-4.094 1.488-5.17l5.228-1.83L5.807 5.64c-.287.643-.075 1.398.544 1.716.208.106.425.155.638.155.454 0 .89-.25 1.09-.697l2.645-5.918c.314-.707.037-1.516-.62-1.85-2.02-1.04-4.22-.38-5.4.92-1.6 1.83-1.32 4.49-.66 6.012l3.228 7.21c.277.625.992.83 1.597.466l6.814-4.108z"/></svg>
               </a>
             </div>
 
@@ -108,9 +108,9 @@ export function Footer() {
                 <img 
                   src="https://res.cloudinary.com/dxyaxgbjl/image/upload/v1781294261/Aspire-2025-2026-300x300_j62inc.webp" 
                   alt="Aspire Member Investor" 
-                  className="h-16 w-16 object-contain group-hover:scale-110 transition-transform duration-300 filter grayscale group-hover:grayscale-0"
+                  className="h-32 w-32 object-contain group-hover:scale-110 transition-transform duration-300"
                 />
-                <div className="text-neutral-500 font-medium text-xs tracking-widest uppercase">
+                <div className="text-neutral-500 font-medium text-sm tracking-widest uppercase">
                   Aspire<br/>Member<br/>Investor
                 </div>
               </div>
