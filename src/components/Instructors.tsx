@@ -64,35 +64,60 @@ export function Instructors() {
           <div className="w-24 h-1 bg-[#ED1C24] mx-auto mt-8 mb-4"></div>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 lg:gap-8 auto-rows-fr">
-          {instructors.map((instructor, i) => (
-            <div 
-              key={i}
-              className={`group relative overflow-hidden rounded-xl bg-neutral-950 border border-black/5 hover:border-black/20 shadow-[0_10px_30px_rgba(0,0,0,0.15)] hover:shadow-[0_20px_50px_rgba(237,28,36,0.2)] transition-all duration-700 ${
-                i === 0 ? "md:col-span-2 md:row-span-2 min-h-[450px] lg:min-h-[600px]" : "col-span-1 row-span-1 min-h-[350px] lg:min-h-0"
-              }`}
-            >
-              <img 
-                src={instructor.image} 
-                alt={instructor.name}
-                className={`absolute inset-0 w-full h-full object-cover opacity-80 group-hover:opacity-100 filter grayscale group-hover:grayscale-0 transition-all duration-1000 ease-out group-hover:scale-105 ${i === 0 ? 'object-top lg:object-[center_10%]' : 'object-top'}`}
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-90 group-hover:opacity-70 transition-opacity duration-700" />
-              
-              <div className="absolute bottom-0 left-0 w-full flex flex-col justify-end p-6 md:p-8 translate-y-4 group-hover:translate-y-0 transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)]">
-                <h3 className={`font-display font-medium text-white uppercase tracking-widest mb-1 ${i === 0 ? 'text-4xl md:text-6xl drop-shadow-lg' : 'text-2xl md:text-3xl'}`}>
-                  {instructor.name}
+        <div className="flex flex-col items-center">
+          {/* Master Myers */}
+          <div className="mb-16 md:mb-20 w-full max-w-[320px]">
+            <div className="group flex flex-col items-center group relative cursor-pointer">
+              <div className="w-full aspect-[3/4] overflow-hidden rounded-xl bg-neutral-900 border border-neutral-200/50 shadow-[0_10px_30px_rgba(0,0,0,0.1)] relative">
+                <img 
+                  src={instructors[0].image} 
+                  alt={instructors[0].name}
+                  className="absolute inset-0 w-full h-full object-cover object-top opacity-90 group-hover:opacity-100 filter grayscale group-hover:grayscale-0 transition-all duration-700 ease-out group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-80 group-hover:opacity-50 transition-opacity duration-700" />
+              </div>
+              <div className="text-center mt-6 translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
+                <h3 className="font-display font-medium text-3xl md:text-4xl text-current uppercase tracking-widest mb-1">
+                  {instructors[0].name}
                 </h3>
-                <p className={`text-[#ED1C24] font-bold uppercase tracking-widest ${i === 0 ? 'text-sm md:text-lg mb-2' : 'text-xs md:text-sm mb-1'} drop-shadow-md`}>
-                  {instructor.role}
+                <p className="text-[#ED1C24] font-bold uppercase tracking-widest text-sm mb-2 drop-shadow-sm">
+                  {instructors[0].role}
                 </p>
-                <div className="h-[2px] w-8 bg-white/30 my-2 group-hover:w-16 group-hover:bg-[#ED1C24] transition-all duration-500"></div>
-                <p className="text-white/70 font-sans uppercase tracking-widest text-[10px] md:text-xs">
-                  {instructor.degree}
+                <div className="h-[2px] w-8 mx-auto bg-neutral-300 group-hover:w-16 group-hover:bg-[#ED1C24] transition-all duration-500 mb-2"></div>
+                <p className="text-neutral-500 font-sans uppercase tracking-widest text-[10px] md:text-xs">
+                  {instructors[0].degree}
                 </p>
               </div>
             </div>
-          ))}
+          </div>
+          
+          {/* Rest of the team */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 w-full max-w-5xl justify-items-center">
+            {instructors.slice(1).map((instructor, i) => (
+              <div key={i} className="group flex flex-col items-center relative cursor-pointer w-full max-w-[260px]">
+                <div className="w-full aspect-[3/4] overflow-hidden rounded-xl bg-neutral-900 border border-neutral-200/50 shadow-[0_10px_30px_rgba(0,0,0,0.05)] relative">
+                  <img 
+                    src={instructor.image} 
+                    alt={instructor.name}
+                    className="absolute inset-0 w-full h-full object-cover object-top opacity-90 group-hover:opacity-100 filter grayscale group-hover:grayscale-0 transition-all duration-700 ease-out group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-80 group-hover:opacity-50 transition-opacity duration-700" />
+                </div>
+                <div className="text-center mt-6 translate-y-2 group-hover:translate-y-0 transition-transform duration-500 w-full">
+                  <h3 className="font-display font-medium text-xl md:text-2xl text-current uppercase tracking-widest mb-1">
+                    {instructor.name}
+                  </h3>
+                  <p className="text-[#ED1C24] font-bold uppercase tracking-widest text-xs mb-2">
+                    {instructor.role}
+                  </p>
+                  <div className="h-[2px] w-6 mx-auto bg-neutral-300 group-hover:w-10 group-hover:bg-[#ED1C24] transition-all duration-500 mb-2"></div>
+                  <p className="text-neutral-500 font-sans uppercase tracking-widest text-[10px]">
+                    {instructor.degree}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
 
       </div>
